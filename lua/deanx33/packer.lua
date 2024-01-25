@@ -74,7 +74,6 @@ return require('packer').startup(function(use)
         use("folke/zen-mode.nvim")
         use("github/copilot.vim")
         use("eandrju/cellular-automaton.nvim")
-        use("laytan/cloak.nvim")
         use( {
             'nvim-lualine/lualine.nvim',
             requires = { 'nvim-tree/nvim-web-devicons', opt = true }
@@ -83,5 +82,22 @@ return require('packer').startup(function(use)
             "windwp/nvim-autopairs",
             config = function() require("nvim-autopairs").setup {} end
         }
+        use ("romgrk/barbar.nvim")
+        use ("lewis6991/gitsigns.nvim")
+        -- Lua
+        use {
+            '0x00-ketsu/autosave.nvim',
+            config = function()
+                require('autosave').setup {
+                    -- your configuration comes here
+                    -- or leave it empty to use the default settings
+                    -- refer to the configuration section below
+                }
+            end
+        }
+
+    use ('f-person/git-blame.nvim')
     end)
+
+
 

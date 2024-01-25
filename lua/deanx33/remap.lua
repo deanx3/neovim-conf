@@ -47,8 +47,16 @@ vim.keymap.set("n", "<leader>mr", "<cmd>CellularAutomaton make_it_rain<CR>");
 vim.keymap.set("n", "<leader><leader>", function()
     vim.cmd("so")
 end)
-
+--toggle tree
 vim.keymap.set("n", "<C-r>",":NvimTreeFocus<CR>")
 vim.keymap.set("n", "<C-s>", "<C-c>:w<CR>")
 vim.keymap.set("n", "<C-i>", "ggVG=")
-
+-- move line down
+vim.keymap.set("n","<C-j>","ddp")
+--move live up
+vim.keymap.set("n", "<C-k>","ddKp")
+--copy full line
+--cut full line
+vim.keymap.set('n', '<A-,>', '<Cmd>BufferPrevious<CR>')
+vim.keymap.set('n', '<A-.>', '<Cmd>BufferNext<CR>')
+vim.keymap.set('n', '<A-c>', '<Cmd>BufferClose<CR>')
