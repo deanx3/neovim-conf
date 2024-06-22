@@ -24,15 +24,15 @@ vim.keymap.set("n", "n", "nzzzv")
 -- Move to previous search result and center the cursor with N
 vim.keymap.set("n", "N", "Nzzzv")
 
--- Start Vim-With-Me session with <leader>vwm
-vim.keymap.set("n", "<leader>vwm", function()
-    require("vim-with-me").StartVimWithMe()
-end)
+-- -- Start Vim-With-Me session with <leader>vwm
+-- vim.keymap.set("n", "<leader>vwm", function()
+--     require("vim-with-me").StartVimWithMe()
+-- end)
 
--- Stop Vim-With-Me session with <leader>svwm
-vim.keymap.set("n", "<leader>svwm", function()
-    require("vim-with-me").StopVimWithMe()
-end)
+-- -- Stop Vim-With-Me session with <leader>svwm
+-- vim.keymap.set("n", "<leader>svwm", function()
+--     require("vim-with-me").StopVimWithMe()
+-- end)
 
 -- Paste and replace the selected text without copying it with <leader>p in visual mode
 vim.keymap.set("x", "<leader>p", [["_dP]])
