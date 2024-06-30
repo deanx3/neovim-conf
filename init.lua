@@ -1,2 +1,3 @@
-require("deanx33")
+require("config.lazy")
+require("remap")
 
