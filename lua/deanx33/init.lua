@@ -19,3 +19,10 @@ require("nvim-tree").setup({
     dotfiles = false,
   },
 })
+local cfg = {
+    bind = true,
+    handler_opt = {
+        border = "rounded"
+    }
+}  -- add your config here
+require "lsp_signature".setup(cfg)
