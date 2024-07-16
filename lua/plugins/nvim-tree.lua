@@ -12,12 +12,24 @@ return {
 	},
 	{
   	"nvim-treesitter/nvim-treesitter",
-  	version = "*",
-  	lazy = false,
-	},	
- 	{ "rose-pine/neovim", name = "rose-pine" , init= function() vim.cmd('colorscheme rose-pine') end},
+  	build = ":TSUpdate",
+  	config = function () 
+    	local configs = require("nvim-treesitter.configs")
+
+    	configs.setup({
+        	ensure_installed = { "c", "lua", "vim", "go", "javascript", "html" },
+        	sync_install = false,
+        	highlight = { enable = true },
+        	indent = { enable = true },  
+      	})
+  	end
+	},
+ 	
+	{ "rose-pine/neovim", name = "rose-pine" , init= function() vim.cmd('colorscheme rose-pine') end},
+	
 	{'williamboman/mason.nvim', config = function()
             require('mason').setup()
+	    require('mason-lspconfig').setup()
         end,},
 
  	{'williamboman/mason-lspconfig.nvim'},
