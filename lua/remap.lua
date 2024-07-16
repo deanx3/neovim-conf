@@ -10,3 +10,14 @@ vim.keymap.set("n", "<leader>fml", "<cmd>CellularAutomaton make_it_rain<CR>")
 vim.keymap.set("n", "<leader>Y", [["+Y]])
 local builtin = require('telescope.builtin')
 vim.keymap.set('n', '<leader>pf', builtin.find_files, {})
+-- Save the current buffer with Ctrl-s
+vim.keymap.set("n", "<C-s>", "<C-c>:w<CR>")
+
+-- Format the entire buffer with Ctrl-i
+vim.keymap.set("n", "<C-i>", "ggVG=")
+
+-- Move current line down with Ctrl-j
+vim.keymap.set("n", "<C-j>", "ddp")
+
+-- Move current line up with Ctrl-k
+vim.keymap.set("n", "<C-k>", "ddkP")
