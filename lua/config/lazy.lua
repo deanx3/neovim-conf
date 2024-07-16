@@ -70,3 +70,8 @@ require('mason-lspconfig').setup({
     end,
   },
 })
+
+ vim.wo.relativenumber = true
+
+
+
