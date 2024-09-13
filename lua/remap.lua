@@ -21,3 +21,10 @@ vim.keymap.set("n", "<C-j>", "ddp")
 
 -- Move current line up with Ctrl-k
 vim.keymap.set("n", "<C-k>", "ddkP")
+-- FOr movement on screen
+vim.keymap.set("n", "<C-d>", "<C-d>zz")
+vim.keymap.set("n", "<C-u>", "<C-u>zz")
+
+-- for searching / 
+vim.keymap.set("n", "n", "nzzzv")
+vim.keymap.set("n", "n", "Nzzzv")
