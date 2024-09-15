@@ -25,24 +25,23 @@ return {
 		end
 	},
 
-	--{ "rose-pine/neovim", name = "rose-pine" , init= function() vim.cmd('colorscheme rose-pine') end},
-	{ 
-		"navarasu/onedark.nvim", 
-		name = "onedark",
-		init = function()
-			require('onedark').setup {
-				style = 'darker'
-			}
-			require('onedark').load()
-		end
-	},
+	-- { 
+	-- 	"navarasu/onedark.nvim", 
+	-- 	name = "onedark",
+	-- 	init = function()
+	-- 		require('onedark').setup {
+	-- 			style = 'darker'
+	-- 		}
+	-- 		require('onedark').load()
+	-- 	end
+	-- },
 
-	{'williamboman/mason.nvim', config = function()
-		require('mason').setup()
-		require('mason-lspconfig').setup()
-	end,},
+	-- {'williamboman/mason.nvim', config = function()
+	-- 	require('mason').setup()
+	-- 	require('mason-lspconfig').setup()
+	-- end,},
 
-	{'williamboman/mason-lspconfig.nvim'},
+	-- {'williamboman/mason-lspconfig.nvim'},
 
 	{'VonHeikemen/lsp-zero.nvim', branch = 'v3.x'},
 	{'neovim/nvim-lspconfig'},
