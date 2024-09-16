@@ -1,5 +1,5 @@
 return {
-  { 'rose-pine/theme', init = function()
+  { 'rose-pine/neovim', init = function()
       require("rose-pine").setup({
           -- ... your Rose Pine theme configuration here
       })

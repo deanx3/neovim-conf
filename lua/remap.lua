@@ -1,4 +1,4 @@
--- Focus on NvimTree file explorer with Ctrl-r
+-- test Focus on NvimTree file explorer with Ctrl-r
 vim.keymap.set("n", "<leader>Y", [["+Y]])
 vim.keymap.set("n", "<C-r>", ":NvimTreeFocus<CR>")
 vim.keymap.set("n", "<leader>fml", "<cmd>CellularAutomaton make_it_rain<CR>")
@@ -10,8 +10,9 @@ vim.keymap.set("n", "<leader>fml", "<cmd>CellularAutomaton make_it_rain<CR>")
 vim.keymap.set("n", "<leader>Y", [["+Y]])
 local builtin = require('telescope.builtin')
 vim.keymap.set('n', '<leader>pf', builtin.find_files, {})
+
 -- Save the current buffer with Ctrl-s
-vim.keymap.set("n", "<C-s>", "<C-c>:w<CR>")
+vim.keymap.set("n", "<C-s>", ":w<CR>")
 
 -- Format the entire buffer with Ctrl-i
 vim.keymap.set("n", "<C-i>", "ggVG=")
@@ -21,6 +22,7 @@ vim.keymap.set("n", "<C-j>", "ddp")
 
 -- Move current line up with Ctrl-k
 vim.keymap.set("n", "<C-k>", "ddkP")
+
 -- FOr movement on screen
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
 vim.keymap.set("n", "<C-u>", "<C-u>zz")
@@ -42,7 +44,7 @@ vim.keymap.set("n", "<C-e>", function() harpoon.ui:toggle_quick_menu(harpoon:lis
 vim.keymap.set("n", "<C-h>", function() harpoon:list():select(1) end)
 vim.keymap.set("n", "<C-t>", function() harpoon:list():select(2) end)
 vim.keymap.set("n", "<C-n>", function() harpoon:list():select(3) end)
-vim.keymap.set("n", "<C-s>", function() harpoon:list():select(4) end)
+-- vim.keymap.set("n", "<C-s>", function() harpoon:list():select(4) end)
 
 -- Toggle previous & next buffers stored within Harpoon list
 vim.keymap.set("n", "<C-S-P>", function() harpoon:list():prev() end)

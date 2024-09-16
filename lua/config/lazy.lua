@@ -20,7 +20,6 @@ require("lazy").setup({
   },
   -- Configure any other settings here. See the documentation for more details.
   -- colorscheme that will be used when installing plugins.
-  install = { colorscheme = { "rose-pine" } },
 	-- { "rose-pine/neovim", name = "rose-pine" , init= function() vim.cmd('colorscheme rose-pine') end},
 
   -- automatically check for plugin updates
