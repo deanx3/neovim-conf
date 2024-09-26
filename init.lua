@@ -5,4 +5,4 @@ vim.o.shiftwidth = 4
 vim.o.softtabstop = 4
 vim.o.expandtab = true
 vim.wo.relativenumber = true
-
+vim.wo.number = true
