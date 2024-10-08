@@ -1,6 +1,9 @@
 -- test Focus on NvimTree file explorer with Ctrl-r
 vim.keymap.set("n", "<leader>Y", [["+Y]])
 vim.keymap.set("n", "<C-r>", ":NvimTreeFocus<CR>")
+
+vim.keymap.set("n", "<C-.>", ":NvimTreeToggle<CR>")
+
 vim.keymap.set("n", "<leader>fml", "<cmd>CellularAutomaton make_it_rain<CR>")
 
 -- Open file explorer with <leader>pv (leader is space, so space+pv)
