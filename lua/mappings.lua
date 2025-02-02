@@ -12,11 +12,5 @@ vim.keymap.set("n", "<C-d>", "<C-d>zz")
 vim.keymap.set("n", "<C-u>", "<C-u>zz")
 -- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
 
--- UFO fold mappings
-map("n", "zR", require("ufo").openAllFolds, { desc = "Open all folds" })
-map("n", "zM", require("ufo").closeAllFolds, { desc = "Close all folds" })
-map("n", "zr", require("ufo").openFoldsExceptKinds, { desc = "Open some folds" })
-map("n", "zm", require("ufo").closeFoldsWith, { desc = "Close some folds" })
+vim.keymap.set("i", "<C-c>", "<Esc>", { noremap = true, silent = true })
 
--- Ctrl + C for Escape
-map("i", "<C-c>", "<Esc>", { desc = "Ctrl + C as Escape" })
