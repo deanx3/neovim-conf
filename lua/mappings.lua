@@ -20,3 +20,5 @@ map("n", "zm", require("ufo").closeFoldsWith, { desc = "Close some folds" })
 
 -- Ctrl + C for Escape
 map("i", "<C-c>", "<Esc>", { desc = "Ctrl + C as Escape" })
+vim.api.nvim_set_keymap('i', '<C-c>', '<Esc>', { noremap = true, silent = true })  -- Exit insert mode
+
