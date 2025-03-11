@@ -22,3 +22,12 @@ map("n", "zm", require("ufo").closeFoldsWith, { desc = "Close some folds" })
 map("i", "<C-c>", "<Esc>", { desc = "Ctrl + C as Escape" })
 vim.api.nvim_set_keymap('i', '<C-c>', '<Esc>', { noremap = true, silent = true })  -- Exit insert mode
 
+--
+vim.api.nvim_set_keymap('n', ';', ';', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', ',', ',', { noremap = true, silent = true })
+
+-- Move current line down with Ctrl-j
+vim.keymap.set("n", "<C-j>", "ddp")
+
+-- Move current line up with Ctrl-k
+vim.keymap.set("n", "<C-k>", "ddkP")
