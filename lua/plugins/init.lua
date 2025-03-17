@@ -22,17 +22,6 @@ return {
       },
     },
   },
-   {
-    "kevinhwang91/nvim-ufo",
-    dependencies = { "kevinhwang91/promise-async" },
-    config = function()
-      require("ufo").setup({
-        provider_selector = function(_, _, _)
-          return { "lsp", "indent" }
-        end
-      })
-    end
-
   {
     "MeanderingProgrammer/render-markdown.nvim",
     config = function()
@@ -67,5 +56,23 @@ return {
     "giusgad/pets.nvim",
     dependencies = { "MunifTanjim/nui.nvim", "giusgad/hologram.nvim" },
   }
-
+  ,
+{ "tpope/vim-dadbod" }
+,{
+  'kristijanhusak/vim-dadbod-ui',
+  dependencies = {
+    { 'tpope/vim-dadbod', lazy = true },
+    { 'kristijanhusak/vim-dadbod-completion', ft = { 'sql', 'mysql', 'plsql' }, lazy = true }, -- Optional
+  },
+  cmd = {
+    'DBUI',
+    'DBUIToggle',
+    'DBUIAddConnection',
+    'DBUIFindBuffer',
+  },
+  init = function()
+    -- Your DBUI configuration
+    vim.g.db_ui_use_nerd_fonts = 1
+  end,
+}
 }
