@@ -1,0 +1,24 @@
+-- lua/config/treesitter.lua
+require("nvim-treesitter.configs").setup {
+  ensure_installed = {
+    "lua",
+    "php",
+    "vue",
+    "html",
+    "css",
+    "javascript",
+    "typescript",
+    "go",
+    "python",
+    "json",
+    "bash",
+  },
+  highlight = {
+    enable = true,
+    additional_vim_regex_highlighting = false,
+  },
+  indent = {
+    enable = true,
+  },
+}
+

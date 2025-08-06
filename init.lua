@@ -35,3 +35,10 @@ require "nvchad.autocmds"
 vim.schedule(function()
   require "mappings"
 end)
+
+vim.api.nvim_create_autocmd('filetype', {
+  pattern = 'vue',
+  callback = function()
+    vim.opt_local.commentstring = '<!--%s-->'
+  end,
+})
