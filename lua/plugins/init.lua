@@ -14,15 +14,6 @@ return {
   },
 
   {
-    "nvim-treesitter/nvim-treesitter",
-    opts = {
-      ensure_installed = {
-        "vim", "lua", "vimdoc",
-        "html", "css"
-      },
-    },
-  },
-  {
     "MeanderingProgrammer/render-markdown.nvim",
     config = function()
       -- Optional: Add any plugin-specific configurations here
