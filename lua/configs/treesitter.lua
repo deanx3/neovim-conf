@@ -1,16 +1,30 @@
 require("nvim-treesitter.configs").setup {
   ensure_installed = {
     "lua",
+    -- PHP / Laravel / Blade
     "php",
+    "blade",
+    -- Vue / JavaScript
     "vue",
-    "html",
-    "css",
     "javascript",
     "typescript",
-    "go",
-    "python",
+    "tsx",
+    -- Web
+    "html",
+    "css",
+    "scss",
     "json",
+    "yaml",
+    -- Go
+    "go",
+    "gomod",
+    "gosum",
+    -- Python
+    "python",
+    -- Other
     "bash",
+    "markdown",
+    "markdown_inline",
   },
   highlight = {
     enable = true,
