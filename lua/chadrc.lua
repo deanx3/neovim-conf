@@ -6,7 +6,7 @@
 local M = {}
 
 M.base46 = {
-	theme = "dark_horizon",
+	theme = "neofusion",
 
 	hl_override = {
 		Cursor = { bg = "#FFFFFF", fg = "#000000" },
